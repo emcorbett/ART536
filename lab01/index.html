@@ -12,6 +12,8 @@
 
             <a-box name="pillow1" position="1.117 1.025 2.238" rotation="25 0 0" width=".60" height=".5" depth=".127" color="#FFF"></a-box>
             <a-box name="pillow2" position=".457 1.025 2.238" rotation="25 0 0" width=".60" height=".5" depth=".127" color="#FFF"></a-box>
+
+    <a-entity name="pumpkin">
             <a-cone
             position=".711 .891 1.498"
             radius-bottom="0.14"
@@ -36,13 +38,45 @@
             height=".07"
             rotation="-27 0 0"
             color="#ffa600"> </a-cone>
-            <a-sphere
-            position=".711 1.093 1.498"
-            radius="0.01"
+            <a-sphere name="foot1"
+            position=".570 .771 1.448"
+            radius="0.03"
             color="#ffa600">
             </a-sphere>
-       
+            <a-sphere name="foot2"
+            position=".570 .771 1.526"
+            radius="0.03"
+            color="#ffa600">
+            </a-sphere>
+       <a-sphere name="foot3"
+            position=".672 .771 1.634"
+            radius="0.03"
+            color="#ffa600">
+            </a-sphere>
+            <a-sphere name="foot4"
+            position=".672 .771 1.366"
+            radius="0.03"
+            color="#ffa600">
+            </a-sphere>
+            <a-cone name="tail"
+            position=".891 .869 1.438"
+            radius-bottom="0.05"
+            radius-top="0"
+            height=".47"
+            rotation="-45 -45 0"
+            color="#ffa600"> </a-cone>
+            <a-sphere name="eye1"
+            position=".611 1.105 1.46"
+            radius="0.01"
+            color="#000000">
+            </a-sphere>
+            <a-sphere name="eye2"
+            position=".611 1.105 1.515"
+            radius="0.01"
+            color="#000000">
+            </a-sphere>
 
+            </a-entity>
            
         <a-box name="nightstand" position="-0.358 0.298 2.065" rotation="0 90 0" height=".6" width=".45" depth=".6" color="#693d1a"></a-box>  
         <a-cylinder name="candle" position="-.49 .717 2.074" radius=".05" height=".20" color="#ccbae3"></a-cylinder> 
@@ -82,8 +116,11 @@
         <a-box name="window" position="1.617 1.228 .832"  height="1.6764" depth="1.066" width=".025" color="#e1f7f7" ></a-box>
         <a-box name="window-frame" position="1.591 .378 .832"  height=".025" width=".076" depth="1.066" ></a-box>
 
-        <a-sphere name="light" position="0 2.443 0"  radius=".15" color="#faefcd"></a-sphere>
+        <a-sphere name="light" position="0 2.443 0" opacity=".5" radius=".15" color="#faefcd"></a-sphere>
         <a-torus name="light-ring" position="0 2.443 0" radius=".16" radius-tubular=".01" rotation="90 0 0" position=0 2.443 0" color="#693d1a"></a-torus>
+        <a-light name="over-head-light" position="0 2.331 0" type="point" intensity="2.5" color="#ff9b3d" ></a-light>
+        <a-light type="ambient" intensity=".1"></a-light>    
+
 
         <a-box name="picture-1" position="-1.637 1.692 .967" height=".431" width=".025" depth=".279" color="#35632e" ></a-box>
         <a-box name="picture-2" position="-1.637 1.156 .967" height=".431" width=".025" depth=".279" color="#eba23d"></a-box>
@@ -97,9 +134,9 @@
         <a-plane name="door-wall" position="-1.647 1.226 0" rotation="0 90 0" width="4.8" height="2.438" color="#f0efe6"></a-plane>
          <a-plane name="closet-wall" position="0 1.226 -2.395" rotation="0 0 0" width="3.3" height="2.438" color="#f0efe6"></a-plane>
         <a-plane name="window-wall" position="1.643 1.226 0" rotation="0 -90 0" width="4.8" height="2.438" color="#f0efe6"></a-plane>
-        <a-plane name="head-board-wall" position="0 1.226 2.397" rotation="0 -180 0" width="3.3" height="2.438" color="#f0efe6"></a-plane>
+        <a-plane name="head-board-wall" position="0 1.226 2.377" rotation="0 -180 0" width="3.3" height="2.438" color="#f0efe6"></a-plane>
 
-        <a-plane name="ground" position="0 0 0" rotation="-90 0 0" width="3.3" height="4.8" color="#e6dbc5" =></a-plane>
+        <a-plane name="ground" position="0 0 0" rotation="-90 0 0" width="3.35" height="4.82" color="#e6dbc5" =></a-plane>
         <a-plane name="ceiling" position="0 2.4384 0" rotation="90 0 0" width="3.3" height="4.8" color="#e6dbc5" =></a-plane>
         <a-sky color="white"> </a-sky>
     </a-scene>
