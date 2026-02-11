@@ -9,15 +9,31 @@
     
 <a-scene background="color: #FAFAFA">
 
+<a-assets>
+     
+    <img id="brick_diff" src="/brick/whitewashed_brick_diff_1k.png" alt="">
+    
+    <img id="brick_rough" src="/brick/whitewashed_brick_rough_1k.png" alt="">
+
+    <img id="brick_nor" src="/brick/whitewashed_brick_nor_gl_1k.png" alt="">
+        <img id="brick_ao" src="/brick/whitewashed_brick_ao_1k.png" alt="">
+
+    <img id="rosewood_rough" src="/textures/rosewood_veneer1_rough_4k.exr" alt="">
+
+
+
+
+</a-assets>
+
 <a-entity position="0 0 0">
 
-    <a-sphere position="3 1.25 -5" radius="1.25" color="#EF2D5E" shadow material="roughness: 0" metalness=".94"></a-sphere>
+    <a-sphere position="3 1.25 -5" radius="1.25" color="#ff009d" shadow material="roughness: 0; src: #brick_diff; roughnessMap: #brick_rough; normalMap: #brick_nor; abientOcclusionMap: #brick_ao;  " metalness=".7"></a-sphere>
 
 
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow material="roughness: .5" metalness=".5" ></a-sphere>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#ff9500" shadow material="roughness: .5; src: #brick_diff; roughnessMap: #brick_rough; normalMap: #brick_nor; abientOcclusionMap: #brick_ao; " metalness=".5" ></a-sphere>
 
 
-    <a-sphere position="-3 1.25 -5" radius="1.25" color="#EF2D5E" shadow material="roughness: 1"></a-sphere>
+    <a-sphere position="-3 1.25 -5" radius="1.25" color="#fff" shadow material="roughness: 1; src: #brick_diff; roughnessMap: #brick_rough; "></a-sphere>
 <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#7BC8A4" shadow></a-plane>
     </a-entity>
 
@@ -47,7 +63,9 @@
     </a-entity>
 
 
-    
+    <a-entity light="intensity: .5; type: ambient"></a-entity>
+        <a-entity light="intensity: 7; type: point" position="1.5 1.7 -2.5"></a-entity>
+
 </a-scene>
 
 <script type="module" src="/src/main.js"></script>

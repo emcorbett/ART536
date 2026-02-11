@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+<a-assets>
+     <img id="rosewood_rough" src="/textures/rosewood_veneer1_rough_4k.exr" alt="">
+          <img id="rosewood_diff" src="/textures/rosewood_veneer1_diff_4k.jpg" alt="">
+
+</a-assets>
+
+
+
+
     <a-scene background="color: #FAFAFA">
         <a-box name="bed-frame" position="0.808 0.2 1.433" rotation="0 0 0" width="1.5" height=".4" depth="1.8" color="#000000" > </a-box>
                 <a-box name="mattress" position="0.805 0.590 1.433" rotation="0 0 0" width="1.45" height=".36" depth="1.75" color="#db6402" ></a-box>
@@ -86,7 +95,8 @@
             <a-box name="desk-leg-1" position="1.541 .372 -.141" height=".76" depth=".07" width=".07" color="#693d1a"></a-box>
              <a-box name="desk-leg-2" position="1.168 .372 -.142" height=".76" depth=".07" width=".07" color="#693d1a"></a-box>
 
-        <a-box name="dresser" position="-1.244 .611 .210" height="1.22" width=".43" depth=".8" color="#693d1a"></a-box>
+        <a-box name="dresser" position="-1.244 .611 .210" height="1.22" width=".43" depth=".8" color="#693d1a" material="color: #fff; src: #rosewood_diff; roughness: .5;  roughnessMap: #rosewood_rough; "
+        ></a-box>
 
 
         <a-box name="chair-base" position="1.141 .380 -.372" height=".05" width=".381" depth=".381" color="#e6d4b5"></a-box>
