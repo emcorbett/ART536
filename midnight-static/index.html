@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Static</title>
+         <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+         <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+
+
+</head>
+<body>
+
+<a-scene>
+        <a-entity environment="preset: forest; 
+            groundColor: #1b1347; 
+            groundColor2: #3d375c; 
+            grid: cross;
+            dressingColor: #9d4edd; 
+            dressingAmount: 600;
+            skyType: gradient;
+            skyColor2: #11072c;
+            skyColor: #0b1d65;
+            lighting: none;
+            horizonColor: #040307
+            "></a-entity>
+
+
+        <a-light type="ambient" intensity="0.2" color="#f1ccff"></a-light>
+        <a-light light="type: point;
+            color: #b0a8ff; 
+            intensity: 13.61; 
+            distance: 0;
+            decay: 0.93" position="0 4.5 0"
+        ></a-light>
+
+
+
+
+
+
+
+    <a-plane></a-plane>
+   </a-scene> 
+
+
+
+
+</body>
+
+
+
+
+
+</html>
