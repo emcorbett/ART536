@@ -6,13 +6,21 @@
     <title>Midnight Static</title>
          <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
          <script src="https://unpkg.com/aframe-environment-component@1.5.x/dist/aframe-environment-component.min.js"></script>
+         <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
 
 
 </head>
 <body>
-
+<a-entity id="player" position="0 1.6 0">
+            <!-- camera -->
+            <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
+            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
+        </a-entity>
 <a-scene>
-        <a-entity environment="preset: forest; 
+        <a-entity class="floor" environment="preset: forest; 
             groundColor: #1b1347; 
             groundColor2: #3d375c; 
             grid: cross;
@@ -23,24 +31,42 @@
             skyColor: #0b1d65;
             lighting: none;
             horizonColor: #040307
+            
             "></a-entity>
 
 
         <a-light type="ambient" intensity="0.2" color="#f1ccff"></a-light>
         <a-light light="type: point;
             color: #b0a8ff; 
-            intensity: 13.61; 
+            intensity: 16; 
             distance: 0;
-            decay: 0.93" position="0 4.5 0"
+            decay: 0.93" position="0 10 0"
         ></a-light>
 
 
+        <a-box
+        name="bigtent"
+        position="-14.5 4 0"
+        color="#FFF"
+        scale="10 8 20"
+        ></a-box>
+
+        <a-box 
+        name="ticketbooth" 
+        position="-2.45165 3.48684 16.66425" 
+        color="#FFF" 
+        scale="8 7 8"></a-box>
+        
+             
+        
+    
+        
+       
+       
 
 
 
 
-
-    <a-plane></a-plane>
    </a-scene> 
 
 
