@@ -34,6 +34,14 @@
   </a-assets>
   <a-gltf-model src="#MS3dtext" position="-6 3.7 .5" rotation="0 45 0" scale="0.1 0.1 0.1"></a-gltf-model>
 
+  <a-scene>
+  <a-assets>
+    <a-asset-item id="MS-obj" src="MS-3dtext-test.obj"></a-asset-item>
+    <a-asset-item id="MS-mtl" src="MS-3dtext-test.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+</a-scene>
 
 
         <a-entity class="floor" environment="preset: forest; 
