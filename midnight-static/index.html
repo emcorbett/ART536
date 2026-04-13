@@ -12,6 +12,13 @@
 
 </head>
 <body>
+
+  
+ 
+ 
+ 
+
+<!--
 <a-entity id="player" position="0 1.6 0">
             <!-- camera -->
             <a-entity id="camera" camera wasd-controls look-controls></a-entity>
@@ -20,6 +27,15 @@
             <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
         </a-entity>
 <a-scene>
+
+ <a-assets>
+    <a-asset-item id="MS3dtext" src="MS-3dtext-test.glb"></a-asset-item>
+
+  </a-assets>
+  <a-gltf-model src="#MS3dtext" position="-6 3.7 .5" rotation="0 45 0" scale="0.1 0.1 0.1"></a-gltf-model>
+
+
+
         <a-entity class="floor" environment="preset: forest; 
             groundColor: #1b1347; 
             groundColor2: #3d375c; 
@@ -56,8 +72,49 @@
         position="-2.45165 3.48684 16.66425" 
         color="#FFF" 
         scale="8 7 8"></a-box>
-        
-             
+
+
+      
+<a-entity position="0 0 -5">
+            <!-- trunk -->
+            <a-cylinder 
+                height="1.5" 
+                radius="0.2" 
+                color="#3a1c71"
+                material="emissive: #6a00f4; emissiveIntensity: 0.6; blending: additive;"
+                position="0 0.75 0">
+            </a-cylinder>
+
+            <!-- glowing -->
+            <a-entity 
+                light="type: point; color: #9d4edd; intensity: 2; distance: 10"
+                position="0 2 0">
+            </a-entity>
+
+            <!-- layered translucent cones -->
+            <a-cone 
+                height="3.5" 
+                radius-bottom="1.2" 
+                position="0 2 0"
+                material="color: #9d4edd; opacity: 0.8; transparent: true; blending: additive;">
+            </a-cone>
+
+            <a-cone 
+                height="2.5" 
+                radius-bottom="1" 
+                position="0 3 0"
+                material="color: #c77dff; opacity: 0.8; transparent: true; blending: additive;">
+            </a-cone>
+
+            <a-cone 
+                height="2" 
+                radius-bottom="0.8" 
+                position="0 4 0"
+                material="color: #e0aaff; opacity: 0.8; transparent: true; blending: additive;">
+            </a-cone>
+</a-entity>
+
+
         
     
         
