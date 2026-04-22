@@ -29,407 +29,443 @@
 <a-scene>
 
  <a-assets>
-    <a-asset-item id="MS3dtext" src="MS-3dtext-test.glb"></a-asset-item>
+    
+    <img id="long_banner" src="midnight-static-brand-guide.png" alt="">
+    <img id="posterv2" src="posterv2test2.png" alt="">
+        <img id="posterv1" src="posterv1.png" alt="">
+
+        <img id="shortbanner" src="shortbanner.png" alt="">
+        <img id="stagebackdroptest" src="stagebackdrop-test.png" alt="">
+        <img id="happyhoursign" src="happyhoursign.png" alt="">
+        <img id="bar-sides" src="bar-sides.png" alt="">
+        <img id="ticket-booth" src="ticket-booth.png" alt="">
+        <img id="ticket-wall" src="ticket-wall.png" alt="">
+<a-asset-item id="MS3dtext" src="MS-3dtext-test.glb"></a-asset-item>
 
   </a-assets>
-  <a-gltf-model src="#MS3dtext" position="14 3.7 .5" rotation="0 200 0" scale="0.1 0.1 0.1"></a-gltf-model>
+
+
+
+  <a-gltf-model src="#MS3dtext" position="14 3.7 .5" rotation="0 200 0" scale="0.1 0.1 0.1"></a-gltf-model>  
 
   <a-scene>
-  <a-assets>
-    <a-asset-item id="MS-obj" src="MS-3dtext-test.obj"></a-asset-item>
-    <a-asset-item id="MS-mtl" src="MS-3dtext-test.mtl"></a-asset-item>
-  </a-assets>
+                        <a-assets>
+                        <a-asset-item id="MS-obj" src="MS-3dtext-test.obj"></a-asset-item>
+                        <a-asset-item id="MS-mtl" src="MS-3dtext-test.mtl"></a-asset-item>
+                        </a-assets>
 
-  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
-</a-scene>
-
-
-        <a-entity class="floor" environment="preset: forest; 
-            groundColor: #1b1347; 
-            groundColor2: #3d375c; 
-            grid: cross;
-            dressingColor: #9d4edd; 
-            dressingAmount: 600;
-            skyType: gradient;
-            skyColor2: #11072c;
-            skyColor: #0b1d65;
-            lighting: none;
-            horizonColor: #040307
-            
-            "></a-entity>
+                        <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+                        </a-scene>
 
 
-        <a-light type="ambient" intensity="0.2" color="#f1ccff"></a-light>
-        <a-light light="type: point;
-            color: #b0a8ff; 
-            intensity: 16; 
-            distance: 0;
-            decay: 0.93" position="0 10 0"
-        ></a-light>
+                                <a-entity class="floor" environment="preset: forest; 
+                                groundColor: #1b1347; 
+                                groundColor2: #3d375c; 
+                                grid: cross;
+                                dressingColor: #9d4edd; 
+                                dressingAmount: 600;
+                                skyType: gradient;
+                                skyColor2: #11072c;
+                                skyColor: #0b1d65;
+                                lighting: none;
+                                horizonColor: #040307
+                                
+                                "></a-entity>
 
 
-        
+                                <a-light type="ambient" intensity="0.2" color="#f1ccff"></a-light>
+                                <a-light light="type: point;
+                                color: #b0a8ff; 
+                                intensity: 16; 
+                                distance: 0;
+                                decay: 0.93" position="0 10 0"
+                                ></a-light>
 
-        <a-box 
-        name="ticketbooth" 
-        position="-2.45165 3.48684 16.66425" 
-        color="#FFF" 
-        scale="8 7 8"></a-box>
 
-<!--
-<a-entity position="0 0 -5">
-            <a-cylinder 
-                height="1.5" 
-                radius="0.2" 
-                color="#3a1c71"
-                material="emissive: #6a00f4; emissiveIntensity: 0.6; blending: additive;"
-                position="0 0.75 0">
-            </a-cylinder>
+                                
 
-            <a-entity 
-                light="type: point; color: #9d4edd; intensity: 2; distance: 10"
-                position="0 2 0">
-            </a-entity>
+                                 
 
-            <a-cone 
-                height="3.5" 
-                radius-bottom="1.2" 
-                position="0 2 0"
-                material="color: #9d4edd; opacity: 0.8; transparent: true; blending: additive;">
-            </a-cone>
+                        <!--
+                        <a-entity id="glowing-tree" position="0 0 -5">
+                                <a-cylinder 
+                                        height="1.5" 
+                                        radius="0.2" 
+                                        color="#3a1c71"
+                                        material="emissive: #6a00f4; emissiveIntensity: 0.6; blending: additive;"
+                                        position="0 0.75 0">
+                                </a-cylinder>
 
-            <a-cone 
-                height="2.5" 
-                radius-bottom="1" 
-                position="0 3 0"
-                material="color: #c77dff; opacity: 0.8; transparent: true; blending: additive;">
-            </a-cone>
+                                <a-entity 
+                                        light="type: point; color: #9d4edd; intensity: 2; distance: 10"
+                                        position="0 2 0">
+                                </a-entity>
 
-            <a-cone 
-                height="2" 
-                radius-bottom="0.8" 
-                position="0 4 0"
-                material="color: #e0aaff; opacity: 0.8; transparent: true; blending: additive;">
-            </a-cone>
-</a-entity> -->
+                                <a-cone 
+                                        height="3.5" 
+                                        radius-bottom="1.2" 
+                                        position="0 2 0"
+                                        material="color: #9d4edd; opacity: 0.8; transparent: true; blending: additive;">
+                                </a-cone>
 
-<a-entity id="bar" position="-6 0 -7">
+                                <a-cone 
+                                        height="2.5" 
+                                        radius-bottom="1" 
+                                        position="0 3 0"
+                                        material="color: #c77dff; opacity: 0.8; transparent: true; blending: additive;">
+                                </a-cone>
 
-                <!-- counter -->
-                <a-box position="0 0.5 0.8"
-                        width="5"
-                        height="2"
-                        depth="0.7"
-                        color="#3d0e52">
-                </a-box>
+                                <a-cone 
+                                        height="2" 
+                                        radius-bottom="0.8" 
+                                        position="0 4 0"
+                                        material="color: #e0aaff; opacity: 0.8; transparent: true; blending: additive;">
+                                </a-cone>
+                        </a-entity> -->
 
-                <!-- bar top -->
-                <a-box position="0 1.55 0.8"
-                        width="5.2"
-                        height="0.1"
-                        depth="0.8"
-                        color="#13021a">
-                </a-box>
+                        <a-entity id="bar" position="10.430 0 -.410" rotation="0 -90 0">
 
-                <!-- bottom part -->
-                <a-box position="0 0.5 1.16"
-                        width="5"
-                        height="1"
-                        depth="0.05"
-                        color="#13021a">
-                </a-box>
+                                        <!-- counter -->
+                                        <a-box position="0 0.5 0.8"
+                                                width="5"
+                                                height="1.2"
+                                                depth="0.7"
+                                                color=""
+                                                material=" src: #bar-sides; roughnessMap: #bar-sides;">
+                                        </a-box>
 
-                <!-- backing -->
-                <a-box position="0 1.6 -1"
-                        width="5.5"
-                        height="3.2"
-                        depth="0.1"
-                        color="#3d0e52">
-                </a-box>
+                                        <!-- bar top -->
+                                        <a-box position="0 1.12 0.8"
+                                                width="5.2"
+                                                height="0.1"
+                                                depth="0.8"
+                                                color="#0a0e1b">
+                                        </a-box>
 
-                <!-- shelves -->
-                <a-box position="0 2.6 -0.9" width="5" height="0.08" depth="0.3" color="#13021a"></a-box>
-                <a-box position="0 2.1 -0.9" width="5" height="0.08" depth="0.3" color="#13021a"></a-box>
-                <a-box position="0 1.6 -0.9" width="5" height="0.08" depth="0.3" color="#13021a"></a-box>
+                                        <!-- bottom part -->
+                                        <a-box position="0 0.55 1.16"
+                                                width="5"
+                                                height="1"
+                                                depth="0.05"
+                                                color="#fff"
+                                                scale="1 1.07 1"
+                                                material=" src: #happyhoursign; roughnessMap: #happyhoursign;">
+                                        </a-box>
 
-                <!-- vertical shelves -->
-                <a-box position="-1.5 2.1 -0.9" width="0.08" height="2" depth="0.3" color="#3d0e52"></a-box>
-                <a-box position="1.5 2.1 -0.9" width="0.08" height="2" depth="0.3" color="#3d0e52"></a-box>
+                                        <!-- backing -->
+                                        <a-box position="0 1.6 -1"
+                                                width="5.5"
+                                                height="3.2"
+                                                depth="0.1"
+                                                color="#0a0e1b">
+                                        </a-box>
 
-                
-                <!-- 1bottle -->
-                <a-cylinder position="-1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
-                <a-cylinder position="0 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
-                <a-cylinder position="1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
+                                        <!-- shelves -->
+                                        <a-box position="0 2.6 -0.9" width="5" height="0.08" depth="0.3" color="#ffa7f2"></a-box>
+                                        <a-box position="0 2.1 -0.9" width="5" height="0.08" depth="0.3" color="#ffa7f2"></a-box>
+                                        <a-box position="0 1.6 -0.9" width="5" height="0.08" depth="0.3" color="#ffa7f2"></a-box>
 
-                <!-- 2bottle -->
-                <a-cylinder position="-1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
-                <a-cylinder position="0 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
-                <a-cylinder position="1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
+                                        <!-- vertical shelves -->
+                                        <a-box position="-1.5 2.1 -0.9" width="0.08" height="2" depth="0.3" color="#0a0e1b"></a-box>
+                                        <a-box position="1.5 2.1 -0.9" width="0.08" height="2" depth="0.3" color="#0a0e1b"></a-box>
 
-                <!-- 3bottle -->
-                <a-cylinder position="-1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
-                <a-cylinder position="0 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
-                <a-cylinder position="1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
+                                        
+                                        <!-- 1bottle -->
+                                        <a-cylinder position="-1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
+                                        <a-cylinder position="0 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
+                                        <a-cylinder position="1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
 
-                <!-- stools -->
-                <a-cylinder position="-1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
-                <a-cylinder position="0 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
-                <a-cylinder position="1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
+                                        <!-- 2bottle -->
+                                        <a-cylinder position="-1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
+                                        <a-cylinder position="0 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
+                                        <a-cylinder position="1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
 
-                <!-- overhang -->
-                <a-box position="0 3.2 0" width="5.5" height="0.1" depth="3" color="#3d0e52"></a-box>
+                                        <!-- 3bottle -->
+                                        <a-cylinder position="-1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
+                                        <a-cylinder position="0 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
+                                        <a-cylinder position="1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
 
-                <!-- poles -->
-                <a-cylinder position="-1.6 1.6 0.8" radius="0.05" height="3.2" color="#3d0e52"></a-cylinder>
-                <a-cylinder position="1.6 1.6 0.8" radius="0.05" height="3.2" color="#3d0e52"></a-cylinder>
+                                        <!-- stools 
+                                        <a-cylinder position="-1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
+                                        <a-cylinder position="0 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
+                                        <a-cylinder position="1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
+                                        -->
 
-</a-entity>
-        
-<a-entity id="stage" position="0 0 -10">
+                                        <!-- overhang -->
+                                        <a-box position="0 3.2 0" width="5.5" height="0.1" depth="3" color="#0a0e1b"></a-box>
 
-                    <!-- stage riser -->
-                    <a-box position="3 0.75 0"
-                            width="10"
-                            height="1.5"
-                            depth="4"
-                            color="#13021a">
-                    </a-box>
+                                        
 
-                    <!-- floor -->
-                    <a-box position="3 1.51 0"
-                            width="10"
-                            height="0.02"
-                            depth="4"
-                            color="#13021a">
-                    </a-box>
+                        </a-entity>
+                                
+                        <a-entity id="stage" position="0 0 -10">
 
-                    <!-- backdrop -->
-                    <a-plane position="3 3.2 -1.9"
-                            width="10"
-                            height="4"
-                            color="#0d0d0d">
-                    </a-plane>
+                                        <!-- stage riser -->
+                                        <a-box position="3 0.75 0"
+                                                width="10"
+                                                height="1.5"
+                                                depth="4"
+                                                color="#fff"
+                                                material=" src: #long_banner; roughnessMap: #long_banner;">
+                                        </a-box>
 
-                    <!-- dj table (centered) -->
-                    <a-box position="3 1.75 0.8"
-                            width="2.5"
-                            height="0.6"
-                            depth="1"
-                            color="#140324">
-                    </a-box>
+                                        <!-- floor -->
+                                        <a-box position="3 1.51 0"
+                                                width="10"
+                                                height="0.02"
+                                                depth="4"
+                                                color="#13021a">
+                                        </a-box>
 
-                    <!-- step -->
-                    <a-box position="3 0.25 2.2"
-                            width="3"
-                            height="0.5"
-                            depth="0.6"
-                            color="#140324">
-                    </a-box>
+                                        <!-- backdrop -->
+                                        <a-plane position="3 3.2 -1.9"
+                                                width="10"
+                                                height="4"
+                                                color="#"
+                                                material="src: #stagebackdroptest; roughnessMap: #stagebackdroptest;">
+                                        </a-plane>
+                                        <a-box position="3 3.2 -1.9"
+                                                width="10"
+                                                height="4"
+                                                depth=".1"
+                                                color="#"
+                                                material="src: #stagebackdroptest; roughnessMap: #stagebackdroptest;">
+                                        </a-box>
 
-</a-entity>
-    
-<a-entity id="postercube" position="-8 0 -3" rotation="0 90 0">
+                                        <!-- dj table (centered) -->
+                                        <a-box position="3 1.75 0.8"
+                                                width="2.5"
+                                                height="0.6"
+                                                depth="1"
+                                                color="#140324">
+                                        </a-box>
 
-                    <!-- box -->
-                    <a-box position="0 2 0"
-                            width="1.2"
-                            height="4"
-                            depth="1.2"
-                            color="#111111">
-                    </a-box>
+                                        <!-- step -->
+                                        <a-box position="3 0.25 2.2"
+                                                width="3"
+                                                height="0.5"
+                                                depth="0.6"
+                                                color="#140324"
+                                                scale=".59 .7 1">
+                                                
+                                        </a-box>
 
-                    <!-- front poster -->
-                    <a-plane position="0 2 0.61"
-                            width="1"
-                            height="2.6"
-                            color="#ffffff">
-                    </a-plane>
+                        </a-entity>
+                        
+                        <a-entity id="postercube" position="-1.21 0 4.890" rotation="0 130 0">
 
-                    <!-- front border -->
-                    <a-plane position="0 2 0.62"
-                            width="1.1"
-                            height="2.8"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- box -->
+                                        <a-box position="0 2 0"
+                                                width="1.2"
+                                                height="4"
+                                                depth="1.2"
+                                                color="#0a0e1b"
+                                                roughness="0">
+                                        </a-box>
 
-                    <!-- back poster -->
-                    <a-plane position="0 2 -0.61"
-                            width="1"
-                            height="2.6"
-                            rotation="0 180 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        
 
-                    <!-- back border -->
-                    <a-plane position="0 2 -0.62"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 180 0"
-                            color="#333">
-                    </a-plane>
+                                        <!-- front border -->
+                                        <a-plane position="0 2 0.62"
+                                                width="1.1"
+                                                height="2.8"
+                                                color=""
+                                                material=" src: #posterv1; roughnessMap: #posterv1; transparent: true; alphaTest: 0.5;"
+                                                scale="1.490 1.580 1">
+                                        </a-plane>
 
-                    <!-- left poster -->
-                    <a-plane position="-0.61 2 0"
-                            width="1"
-                            height="2.6"
-                            rotation="0 90 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        <!-- back poster -->
+                                        <a-plane position="0 2 -0.61"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 180 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                    <!-- left border -->
-                    <a-plane position="-0.62 2 0"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 90 0"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- back border -->
+                                        <a-plane position="0 2 -0.62"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 180 0"
+                                                color=""
+                                                material=" src: #posterv1; roughnessMap: #posterv1; transparent: true; alphaTest: 0.5;"
+                                                scale="1.490 1.580 1">
+                                        </a-plane>
 
-                    <!-- right poster -->
-                    <a-plane position="0.61 2 0"
-                            width="1"
-                            height="2.6"
-                            rotation="0 -90 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        <!-- left poster -->
+                                        <a-plane position="-0.61 2 0"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 90 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                    <!-- right border -->
-                    <a-plane position="0.62 2 0"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 -90 0"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- left border -->
+                                        <a-plane position="-0.62 2 0"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 -90 0"
+                                                color=""
+                                                material=" src: #posterv2; roughnessMap: #posterv2; transparent: true; alphaTest: 0.5;"
+                                                scale="1.360 1.420 1">
+                                        </a-plane>
 
-</a-entity>
-        
-<a-entity id="postercube2" position="-8 0 4">
+                                        <!-- right poster -->
+                                        <a-plane position="0.61 2 0"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 -90 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                    <!-- box -->
-                    <a-box position="0 2 0"
-                            width="1.2"
-                            height="4"
-                            depth="1.2"
-                            color="#111111">
-                    </a-box>
+                                        <!-- right border -->
+                                        <a-plane position="0.62 2 0"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 90 0"
+                                                color=""
+                                                material=" src: #posterv2; roughnessMap: #posterv2; transparent: true; alphaTest: 0.5;"
+                                                scale="1.360 1.420 1">
+                                        </a-plane>
 
-                    <!-- front poster -->
-                    <a-plane position="0 2 0.61"
-                            width="1"
-                            height="2.6"
-                            color="#ffffff">
-                    </a-plane>
+                        </a-entity>
+                        <a-entity id="postercube2" position="10.3 0 -6.6" rotation="0 90 0">
 
-                    <!-- front border -->
-                    <a-plane position="0 2 0.62"
-                            width="1.1"
-                            height="2.8"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- box -->
+                                        <a-box position="0 2 0"
+                                                width="1.2"
+                                                height="4"
+                                                depth="1.2"
+                                                color="#0a0e1b"
+                                                roughness="0">
+                                        </a-box>
 
-                    <!-- back poster -->
-                    <a-plane position="0 2 -0.61"
-                            width="1"
-                            height="2.6"
-                            rotation="0 180 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        
 
-                    <!-- back border -->
-                    <a-plane position="0 2 -0.62"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 180 0"
-                            color="#333">
-                    </a-plane>
+                                        <!-- front border -->
+                                        <a-plane position="0 2 0.62"
+                                                width="1.1"
+                                                height="2.8"
+                                                color=""
+                                                material=" src: #posterv1; roughnessMap: #posterv1; transparent: true; alphaTest: 0.5;"
+                                                scale="1.490 1.580 1">
+                                        </a-plane>
 
-                    <!-- left poster -->
-                    <a-plane position="-0.61 2 0"
-                            width="1"
-                            height="2.6"
-                            rotation="0 90 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        <!-- back poster -->
+                                        <a-plane position="0 2 -0.61"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 180 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                    <!-- left border -->
-                    <a-plane position="-0.62 2 0"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 90 0"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- back border -->
+                                        <a-plane position="0 2 -0.62"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 180 0"
+                                                color=""
+                                                material=" src: #posterv1; roughnessMap: #posterv1; transparent: true; alphaTest: 0.5;"
+                                                scale="1.490 1.580 1">
+                                        </a-plane>
 
-                    <!-- right poster -->
-                    <a-plane position="0.61 2 0"
-                            width="1"
-                            height="2.6"
-                            rotation="0 -90 0"
-                            color="#ffffff">
-                    </a-plane>
+                                        <!-- left poster -->
+                                        <a-plane position="-0.61 2 0"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 90 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                    <!-- right border -->
-                    <a-plane position="0.62 2 0"
-                            width="1.1"
-                            height="2.8"
-                            rotation="0 -90 0"
-                            color="#000000">
-                    </a-plane>
+                                        <!-- left border -->
+                                        <a-plane position="-0.62 2 0"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 -90 0"
+                                                color=""
+                                                material=" src: #posterv2; roughnessMap: #posterv2; transparent: true; alphaTest: 0.5;"
+                                                scale="1.360 1.420 1">
+                                        </a-plane>
 
-</a-entity>
-       
-       
-<a-entity id="ticketbooth" position="-8 0 .4" rotation="0 90 0">
+                                        <!-- right poster -->
+                                        <a-plane position="0.61 2 0"
+                                                width="1"
+                                                height="2.6"
+                                                rotation="0 -90 0"
+                                                color="#ffffff">
+                                        </a-plane>
 
-                        <!-- back wall -->
-                        <a-box position="0 1.6 -1"
-                                width="4"
-                                height="3.2"
-                                depth="0.1"
-                                color="#13021a">
-                        </a-box>
+                                        <!-- right border -->
+                                        <a-plane position="0.62 2 0"
+                                                width="1.1"
+                                                height="2.8"
+                                                rotation="0 90 0"
+                                                color=""
+                                                material=" src: #posterv2; roughnessMap: #posterv2; transparent: true; alphaTest: 0.5;"
+                                                scale="1.360 1.420 1">
+                                        </a-plane>
 
-                        <!-- left wall -->
-                        <a-box position="-2 1.6 0"
-                                width="0.1"
-                                height="3.2"
-                                depth="2"
-                                color="#13021a">
-                        </a-box>
+                        </a-entity>
+                                
+                        
+                        
+                        
+                        <a-entity id="ticketbooth" position="4 0 5.5" rotation="0 -180 0">
 
-                        <!-- right wallL -->
-                        <a-box position="2 1.6 0"
-                                width="0.1"
-                                height="3.2"
-                                depth="2"
-                                color="#13021a">
-                        </a-box>
+                                                <!-- back wall -->
+                                                <a-box position="0 1.6 -1"
+                                                        width="4"
+                                                        height="3.2"
+                                                        depth="0.1"
+                                                        color=""
+                                                        material=" src: #ticket-booth; roughnessMap: #ticket-booth;">
+                                                </a-box>
 
-                        <!-- counter -->
-                        <a-box position="0 .5 .7"
-                                width="4"
-                                height="1.05"
-                                depth="0.6"
-                                color="#13021a">
-                        </a-box>
+                                                <!-- left wall -->
+                                                <a-box position="-2 1.6 0"
+                                                        width="0.1"
+                                                        height="3.2"
+                                                        depth="2"
+                                                        color=""
+                                                        material=" src: #ticket-wall; roughnessMap: #ticket-wall;">
+                                                </a-box>
 
-                        <!-- top shelf -->
-                        <a-box position="0 2.6 -0.95"
-                                width="3"
-                                height="0.08"
-                                depth="0.3"
-                                color="#333">
-                        </a-box>
+                                                <!-- right wallL -->
+                                                <a-box position="2 1.6 0"
+                                                        width="0.1"
+                                                        height="3.2"
+                                                        depth="2"
+                                                        color=""
+                                                        material=" src: #ticket-wall; roughnessMap: #ticket-wall;">
+                                                </a-box>
 
-                        <!-- bottom shelf -->
-                        <a-box position="0 2.0 -0.95"
-                                width="3"
-                                height="0.08"
-                                depth="0.3"
-                                color="#333">
-                        </a-box>
+                                                <!-- counter -->
+                                                <a-box position="0 .5 .7"
+                                                        width="4"
+                                                        height="1.05"
+                                                        depth="0.6"
+                                                        color="#fff"
+                                                        material=" src: #shortbanner; roughnessMap: #shortbanner;">
+                                                </a-box>
 
-</a-entity>
-  
+                                                <!-- shelves 
+                                                <a-box position="0 2.6 -0.95"
+                                                        width="3"
+                                                        height="0.08"
+                                                        depth="0.3"
+                                                        color="#333">
+                                                </a-box>
+
+                                                
+                                                <a-box position="0 2.0 -0.95"
+                                                        width="3"
+                                                        height="0.08"
+                                                        depth="0.3"
+                                                        color="#333">
+                                                </a-box>-->
+
+                        </a-entity>
+                        
 
 
 
