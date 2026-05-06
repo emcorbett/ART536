@@ -42,6 +42,11 @@
         <img id="ticket-wall" src="ticket-wall.png" alt="">
         <video id="sensation-backdrop" src="sensation-backdrop.mp4" autoplay loop="true"></video>
 <a-asset-item id="MS3dtext" src="MS-3dtext-test.glb"></a-asset-item>
+<a-asset-item id="speakers3d" src="assets/Speakers.glb"></a-asset-item>
+<a-asset-item id="ginbottle3d" src="assets/ginbottle.glb"></a-asset-item>
+<a-asset-item id="stool3d" src="assets/stool.glb"></a-asset-item>
+
+
 
   </a-assets>
 
@@ -172,25 +177,28 @@
 
                                         
                                         <!-- 1bottle -->
-                                        <a-cylinder position="-1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
-                                        <a-cylinder position="0 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
-                                        <a-cylinder position="1 2.7 -0.9" radius="0.05" height="0.3" color="#888"></a-cylinder>
+                                         <a-gltf-model src="#beerbottle3d" position="-1 2.68 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="0 2.68 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="1 2.68 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                        
 
                                         <!-- 2bottle -->
-                                        <a-cylinder position="-1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
-                                        <a-cylinder position="0 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
-                                        <a-cylinder position="1 2.2 -0.9" radius="0.05" height="0.25" color="#777"></a-cylinder>
+                                         <a-gltf-model src="#beerbottle3d" position="-1 2.2 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="0 2.2 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="1 2.2 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                        
 
                                         <!-- 3bottle -->
-                                        <a-cylinder position="-1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
-                                        <a-cylinder position="0 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
-                                        <a-cylinder position="1 1.7 -0.9" radius="0.05" height="0.2" color="#666"></a-cylinder>
+                                         <a-gltf-model src="#beerbottle3d" position="-1 1.7 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="0 1.7 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                         <a-gltf-model src="#beerbottle3d" position="1 1.7 -0.9" radius="0.05" height="0.3" scale="2 2 2" ></a-gltf-model>
+                                        
 
-                                        <!-- stools 
-                                        <a-cylinder position="-1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
-                                        <a-cylinder position="0 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
-                                        <a-cylinder position="1 0.4 1.7" radius="0.2" height="0.8" color="#3d0e52"></a-cylinder>
-                                        -->
+                                        <!--stools-->  
+                                        <a-gltf-model src="#stool3d" position="-1 0.51 1.7" rotation="0 180 0" radius="0.2" height="0.8" ></a-gltf-model>
+                                        <a-gltf-model src="#stool3d" position="0 0.51 1.7" rotation="0 180 0" radius="0.2" height="0.8" ></a-gltf-model>
+                                        <a-gltf-model src="#stool3d" position="1 0.51 1.7" rotation="0 180 0" radius="0.2" height="0.8" ></a-gltf-model>
+                                      
 
                                         <!-- overhang -->
                                         <a-box position="0 3.2 0" width="5.5" height="0.1" depth="3" color="#0a0e1b"></a-box>
@@ -250,6 +258,8 @@
                                                 scale=".59 .7 1">
                                                 
                                         </a-box>
+                                        <a-gltf-model src="#speakers3d" position="-2.880 0 2.450" rotation="0 45 0" scale=".5 .5 .5"></a-gltf-model>
+                                         <a-gltf-model src="#speakers3d" position="9 0 2.450" rotation="0 -45 0" scale=".5 .5 .5"></a-gltf-model>
 
                         </a-entity>
                         
