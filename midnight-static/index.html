@@ -21,17 +21,6 @@
  
 
 
-<a-entity id="player" position="0 1.6 0">
-            <!-- camera -->
-            <a-entity id="camera" camera wasd-controls look-controls></a-entity>
-            <!-- hand controls -->
-            <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
-            <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
-            <a-entity id="player" movement-controls="controls: keyboard, touch; speed: 0.3">
-  <a-entity camera look-controls position="0 1.6 0"></a-entity>
-  
-</a-entity>
-        </a-entity>
 <a-scene>
 <a-entity sound="src: #rager-music" volume="4" 
           event-set__click="_event: click; sound.playSound: true">
@@ -61,19 +50,13 @@
 
   </a-assets>
 
-
+<a-entity id="player" position="0 1.6 0" movement-controls="controls: keyboard, touch; speed: 0.3">
+  <a-entity id="camera" camera wasd-controls look-controls></a-entity>
+  <a-entity id="left-hand" raycaster="objects: .floor" oculus-touch-controls="hand: left" blink-controls></a-entity>
+  <a-entity id="right-hand" raycaster="objects: .floor" oculus-touch-controls="hand: right" blink-controls></a-entity>
+</a-entity>
 
   <a-gltf-model src="#MS3dtext" position="14 3.7 .5" rotation="0 200 0" scale="0.1 0.1 0.1"></a-gltf-model>  
-
-  <a-scene>
-                        <a-assets>
-                        <a-asset-item id="MS-obj" src="MS-3dtext-test.obj"></a-asset-item>
-                        <a-asset-item id="MS-mtl" src="MS-3dtext-test.mtl"></a-asset-item>
-                        </a-assets>
-
-                        <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
-                        </a-scene>
-
 
                                 <a-entity class="floor" 
                                 environment="preset: forest; 
