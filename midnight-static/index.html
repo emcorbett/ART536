@@ -9,7 +9,7 @@
              <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframe-blink-controls.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
-
+<script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
 
 
 </head>
@@ -33,7 +33,9 @@
 </a-entity>
         </a-entity>
 <a-scene>
-
+<a-entity sound="src: #rager-music" volume="4" 
+          event-set__click="_event: click; sound.playSound: true">
+</a-entity>
  <a-assets>
     
     <img id="long_banner" src="midnight-static-brand-guide.png" alt="">
@@ -52,6 +54,7 @@
 <a-asset-item id="ginbottle3d" src="assets/ginbottle.glb"></a-asset-item>
 <a-asset-item id="stool3d" src="assets/stool.glb"></a-asset-item>
 <a-asset-item id="beerbottle3d" src="assets/beer.glb"></a-asset-item>
+<audio id="rager-music" src="assets/rager-music.mp3"></audio>
 
 
 
@@ -255,7 +258,8 @@
                                                 width="2.5"
                                                 height="0.6"
                                                 depth="1"
-                                                color="#140324">
+                                                color="#140324"
+                                                sound="src: #rager-music; autoplay: true">
                                         </a-box>
 
                                         <!-- step -->
@@ -267,8 +271,8 @@
                                                 scale=".59 .7 1">
                                                 
                                         </a-box>
-                                        <a-gltf-model src="#speakers3d" position="-2.880 0 2.450" rotation="0 45 0" scale=".5 .5 .5"></a-gltf-model>
-                                         <a-gltf-model src="#speakers3d" position="9 0 2.450" rotation="0 -45 0" scale=".5 .5 .5"></a-gltf-model>
+                                        <a-gltf-model src="#speakers3d" position="-2.880 0 2.450" rotation="0 45 0" scale=".5 .5 .5" sound="src: #rager-music; autoplay: true"></a-gltf-model>
+                                         <a-gltf-model src="#speakers3d" position="9 0 2.450" rotation="0 -45 0" scale=".5 .5 .5" sound="src: #rager-music; autoplay: true"></a-gltf-model>
 
                         </a-entity>
                         
